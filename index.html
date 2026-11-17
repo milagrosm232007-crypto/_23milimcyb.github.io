@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milagros Muñoz | Portfolio & Cybersecurity</title>
+    
+    <!-- AQUÍ ESTÁ TU ÍCONO NUEVO EN LA PESTAÑA -->
+    <link rel="icon" type="image/png" href="favicon.png.png">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navegación -->
+    <header class="navbar">
+        <div class="container nav-content">
+            <a href="#inicio" class="logo">✨ Milagros<span class="dot">.</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#sobre-mi" data-i18n="nav-about">Sobre mí</a></li>
+                    <li><a href="#cv" data-i18n="nav-cv">Mi CV</a></li>
+                    <li><a href="#formacion" data-i18n="nav-education">Formación</a></li>
+                    <li><a href="#participaciones" data-i18n="nav-participations">Participaciones</a></li>
+                    <li><a href="#stack" data-i18n="nav-stack">Tech Stack</a></li>
+                    <li><a href="#proyectos" data-i18n="nav-projects">Proyectos</a></li>
+                    <li><a href="#contacto" data-i18n="nav-contact">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button id="lang-toggle" class="lang-btn">
+                    <i class="fas fa-globe"></i> <span id="lang-text">EN</span>
+                </button>
+                <button class="menu-toggle" aria-label="Abrir menú">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero / Inicio -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <span class="badge" data-i18n="hero-badge">🎀 Ciberseguridad • Redes • Desarrollo & IA</span>
+            <h1 data-i18n-html="hero-title">Hola, soy <span class="highlight">Milagros Muñoz</span></h1>
+            <p class="subtitle" data-i18n="hero-subtitle">
+                Estudiante de Ciberseguridad en la Universidad Tecnológica de Panamá (UTP), 
+                apasionada por la seguridad defensiva, las redes de datos, la automatización y el desarrollo de software seguro.
+            </p>
+            <div class="hero-buttons">
+                <a href="#proyectos" class="btn btn-primary" data-i18n="btn-projects">Ver Proyectos</a>
+                <a href="#cv" class="btn btn-outline" data-i18n="btn-cv">Descargar CV</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre mí & Idiomas -->
+    <section id="sobre-mi" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="about-title">Sobre mí</h2>
+            <div class="about-grid">
+                <div class="about-text card">
+                    <h3 data-i18n="profile-title">Perfil Profesional</h3>
+                    <p data-i18n="profile-desc-1">
+                        Cuento con experiencia práctica en la implementación de laboratorios virtualizados, 
+                        hardening de sistemas operativos, despliegue de firewalls perimetrales (pfSense) y 
+                        desarrollo de herramientas de automatización y análisis.
+                    </p>
+                    <p data-i18n="profile-desc-2">
+                        Me caracterizo por un enfoque proactivo, capacidad de liderazgo y coordinación de 
+                        proyectos académicos, combinando el rigor técnico de la ciberseguridad con la innovación tecnológica.
+                    </p>
+                </div>
+                <div class="languages-card card">
+                    <h3><i class="fas fa-language"></i> <span data-i18n="languages-title">Idiomas</span></h3>
+                    <ul class="lang-list">
+                        <li>
+                            <span class="lang-name" data-i18n="lang-es">Español</span>
+                            <span class="lang-level badge-level" data-i18n="lang-es-lvl">Nativo</span>
+                        </li>
+                        <li>
+                            <span class="lang-name" data-i18n="lang-en">Inglés</span>
+                            <span class="lang-level badge-level" data-i18n="lang-en-lvl">C2 (Avanzado)</span>
+                        </li>
+                        <li>
+                            <span class="lang-name" data-i18n="lang-it">Italiano</span>
+                            <span class="lang-level badge-level" data-i18n="lang-it-lvl">A2 (Básico)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de CV -->
+    <section id="cv" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title" data-i18n="cv-section-title">Mi Currículum Vitae</h2>
+            <div class="cv-card card">
+                <div class="cv-info">
+                    <div class="cv-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <div>
+                        <h3 data-i18n="cv-card-title">Milagros Muñoz - CV Profesional</h3>
+                        <p data-i18n="cv-card-desc">Visualiza mi hoja de vida actualizada con toda mi experiencia técnica, educativa y proyectos.</p>
+                    </div>
+                </div>
+                <div class="cv-actions">
+                    <a href="cv.pdf" target="_blank" class="btn btn-primary" data-i18n="cv-btn-view">
+                        <i class="fas fa-eye"></i> Ver / Descargar CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Educación y Certificaciones -->
+    <section id="formacion" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="edu-cert-title">Educación y Certificaciones</h2>
+            <div class="two-col-grid">
+                <div>
+                    <h3 class="col-subtitle"><i class="fas fa-graduation-cap"></i> <span data-i18n="edu-title">Educación</span></h3>
+                    <div class="timeline">
+                        <div class="timeline-item card">
+                            <span class="date">2025 - Actualidad</span>
+                            <h4 data-i18n="uni-degree">Licenciatura en Ciberseguridad</h4>
+                            <p class="institution" data-i18n="uni-name">Universidad Tecnológica de Panamá (UTP) — Centro Regional de Panamá Oeste (FISC)</p>
+                        </div>
+                        <div class="timeline-item card">
+                            <span class="date">2012 - 2024</span>
+                            <h4 data-i18n="school-degree">Bachiller en Ciencias</h4>
+                            <p class="institution" data-i18n="school-name">Instituto de Formación Especializada Bilingüe Emmanuel de La Chorrera</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="col-subtitle"><i class="fas fa-certificate"></i> <span data-i18n="cert-title">Cursos y Certificaciones</span></h3>
+                    <div class="cert-list">
+                        <div class="card cert-item">
+                            <span class="date" data-i18n="cert-1-date">Expedición: Septiembre 2026</span>
+                            <h4>Técnico en Redes IP</h4>
+                            <p class="institution">Capacítate para el Empleo</p>
+                        </div>
+                        <div class="card cert-item">
+                            <span class="date">Training Badge</span>
+                            <h4>Generative AI Foundations</h4>
+                            <p class="institution">Amazon Web Services (AWS)</p>
+                            <a href="https://www.credly.com/badges/4ef12071-c090-4a50-8080-e0063e3797f9" target="_blank" rel="noopener noreferrer" class="link-external">
+                                <span data-i18n="credly-text">Ver credencial en Credly</span> <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Participaciones y Concursos -->
+    <section id="participaciones" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title" data-i18n="part-title">Participaciones y Concursos</h2>
+            <div class="cards-grid-3">
+                <div class="card">
+                    <span class="badge-tag" data-i18n="part-1-tag">Ediciones 2025 & 2026</span>
+                    <h3>Hackathon Copa</h3>
+                    <p data-i18n="part-1-desc">Participación en ambas ediciones desarrollando soluciones tecnológicas e innovadoras bajo presión en entornos competitivos.</p>
+                </div>
+                <div class="card">
+                    <span class="badge-tag" data-i18n="part-2-tag">Investigación Científica</span>
+                    <h3>Jornada de Iniciación Científica (JIC) UTP</h3>
+                    <p data-i18n-html="part-2-desc">Co-autora del artículo científico <em>"Condiciones de la Seguridad de estudiantes chorreranos para asistir a sus centros educativos y regresar a sus hogares"</em>.</p>
+                    <a href="https://drive.google.com/open?id=1xsKFsMmUzYsjspvuo0A0BnGJxkXjexL6" target="_blank" rel="noopener noreferrer" class="link-external">
+                        <span data-i18n="read-article">Leer artículo completo</span> <i class="fas fa-file-pdf"></i>
+                    </a>
+                </div>
+                <div class="card">
+                    <span class="badge-tag" data-i18n="part-3-tag">En curso</span>
+                    <h3>CiberItsmo</h3>
+                    <p data-i18n="part-3-desc">Participación activa en iniciativa y competencia regional enfocada en ciberseguridad y defensa digital.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section id="stack" class="section">
+        <div class="container">
+            <h2 class="section-title">Tech Stack</h2>
+            <div class="stack-grid">
+                <div class="card stack-category">
+                    <h3><i class="fas fa-shield-alt"></i> <span data-i18n="stack-sec">Seguridad y Ciberseguridad</span></h3>
+                    <div class="tags">
+                        <span>pfSense</span><span>Suricata (IDS/IPS)</span><span>Fail2ban</span>
+                        <span>Hardening</span><span>Nmap</span><span>Hydra</span><span data-i18n="tag-forensics">Análisis Forense</span>
+                    </div>
+                </div>
+                <div class="card stack-category">
+                    <h3><i class="fas fa-network-wired"></i> <span data-i18n="stack-net">Redes y Protocolos</span></h3>
+                    <div class="tags">
+                        <span>TCP/IP</span><span>DNS</span><span>DHCP</span><span>NAT</span>
+                        <span>Port Forward</span><span>SSH</span><span>Samba</span><span>rsync</span><span>HTTP/HTTPS</span>
+                    </div>
+                </div>
+                <div class="card stack-category">
+                    <h3><i class="fas fa-code"></i> <span data-i18n="stack-dev">Lenguajes y Web</span></h3>
+                    <div class="tags">
+                        <span>Python</span><span>PHP</span><span>Ruby (Sinatra)</span><span>JavaScript</span>
+                        <span>C++</span><span>HTML5</span><span>CSS3</span><span>MySQL</span><span>JSON</span>
+                    </div>
+                </div>
+                <div class="card stack-category">
+                    <h3><i class="fas fa-server"></i> <span data-i18n="stack-sys">Sistemas y Cloud</span></h3>
+                    <div class="tags">
+                        <span data-i18n="tag-ubuntu">Ubuntu Server/Desktop</span><span>Kali Linux</span><span>FreeBSD</span>
+                        <span>Windows</span><span>Microsoft Azure</span><span>Cloudflare</span><span>Git & GitHub</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title" data-i18n="projects-title">Proyectos y Desarrollos</h2>
+            <div class="projects-grid">
+
+                <article class="card project-card">
+                    <div class="project-header">
+                        <span class="project-status" data-i18n="status-dev">En desarrollo</span>
+                        <h3 data-i18n="proj-1-title">Desarrollo de Inteligencia Artificial</h3>
+                    </div>
+                    <p data-i18n="proj-1-desc">Iniciativa en fase inicial enfocada en el diseño, entrenamiento y programación de un modelo/aplicación de Inteligencia Artificial.</p>
+                    <div class="project-tech">
+                        <span>Python</span><span>Machine Learning</span>
+                    </div>
+                    <div class="project-footer">
+                        <span class="link-soon"><i class="fas fa-clock"></i> <span data-i18n="link-soon">Link próximamente</span></span>
+                    </div>
+                </article>
+
+                <article class="card project-card">
+                    <div class="project-header">
+                        <span class="project-status" data-i18n="status-cyber">Ciberseguridad & Redes</span>
+                        <h3 data-i18n="proj-2-title">Laboratorio de Infraestructura y Ransomware Educativo</h3>
+                    </div>
+                    <p data-i18n="proj-2-desc">Entorno virtualizado en VirtualBox con 5 VMs (pfSense, Ubuntu Server, Backup, Desktop y Kali Linux), scripts de cifrado controlado en Python y mitigación con Fail2ban.</p>
+                    <div class="project-tech">
+                        <span>pfSense</span><span>Python</span><span>Kali Linux</span><span>Fail2ban</span><span>VirtualBox</span>
+                    </div>
+                    <div class="project-footer">
+                        <span class="link-soon"><i class="fas fa-clock"></i> <span data-i18n="link-soon">Link próximamente</span></span>
+                    </div>
+                </article>
+
+                <article class="card project-card">
+                    <div class="project-header">
+                        <span class="project-status" data-i18n="status-data">Estructuras de Datos</span>
+                        <h3 data-i18n="proj-3-title">Sistema de Gestión de Archivos con Árboles N-arios</h3>
+                    </div>
+                    <p data-i18n="proj-3-desc">Sistema jerárquico de archivos con operaciones CRUD, visualización de recorridos de árboles y persistencia en JSON.</p>
+                    <div class="project-tech">
+                        <span>Ruby</span><span>Sinatra</span><span>BCrypt</span><span>JSON</span><span>HTML/CSS</span>
+                    </div>
+                    <div class="project-footer">
+                        <span class="link-soon"><i class="fas fa-clock"></i> <span data-i18n="link-soon">Link próximamente</span></span>
+                    </div>
+                </article>
+
+                <article class="card project-card">
+                    <div class="project-header">
+                        <span class="project-status">Cloud</span>
+                        <h3 data-i18n="proj-4-title">Sistema de Gestión de Giras Educativas — UTP</h3>
+                    </div>
+                    <p data-i18n="proj-4-desc">Plataforma integral desarrollada en la nube para la gestión, logística y control de las giras académicas del Centro Regional de Panamá Oeste.</p>
+                    <div class="project-tech">
+                        <span>Microsoft Azure</span><span>Cloud</span><span>Web Services</span>
+                    </div>
+                    <div class="project-footer">
+                        <span class="link-soon"><i class="fas fa-clock"></i> <span data-i18n="link-soon">Link próximamente</span></span>
+                    </div>
+                </article>
+
+                <article class="card project-card">
+                    <div class="project-header">
+                        <span class="project-status" data-i18n="status-jic">Investigación JIC</span>
+                        <h3 data-i18n="proj-5-title">Prototipado de App de Seguridad Estudiantil</h3>
+                    </div>
+                    <p data-i18n="proj-5-desc">Diseño de prototipo móvil enfocado en la protección integral y monitoreo en tiempo real de estudiantes en La Chorrera, respaldado por encuesta a 102 estudiantes.</p>
+                    <div class="project-tech">
+                        <span>Figma</span><span>Procreate</span><span>UX/UI</span>
+                    </div>
+                    <div class="project-footer">
+                        <a href="https://drive.google.com/open?id=1xsKFsMmUzYsjspvuo0A0BnGJxkXjexL6" target="_blank" rel="noopener noreferrer" class="link-external">
+                            <i class="fas fa-file-alt"></i> <span data-i18n="view-pdf">Ver artículo (PDF)</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="card project-card">
+                    <div class="project-header">
+                        <span class="project-status" data-i18n="status-firewall">Seguridad Perimetral</span>
+                        <h3 data-i18n="proj-6-title">Implementación de Firewall pfSense y Hardening</h3>
+                    </div>
+                    <p data-i18n="proj-6-desc">Despliegue avanzado de seguridad perimetral con reglas de filtrado, NAT, VPN (OpenVPN/IPsec), IDS/IPS con Suricata y Portal Cautivo con certificación HTTPS.</p>
+                    <div class="project-tech">
+                        <span>pfSense</span><span>Suricata</span><span>OpenVPN</span><span>IPsec</span><span>Nmap</span>
+                    </div>
+                    <div class="project-footer">
+                        <span class="link-soon"><i class="fas fa-clock"></i> <span data-i18n="link-soon">Link próximamente</span></span>
+                    </div>
+                </article>
+
+                <article class="card project-card">
+                    <div class="project-header">
+                        <span class="project-status" data-i18n="status-web">Desarrollo Web Seguro</span>
+                        <h3 data-i18n="proj-7-title">CyberWeb — Sistema Seguro de Inventario</h3>
+                    </div>
+                    <p data-i18n="proj-7-desc">Aplicación web segura con control de acceso basado en roles, contraseñas cifradas, consultas parametrizadas (PDO) y protección contra vulnerabilidades XSS y CSRF.</p>
+                    <div class="project-tech">
+                        <span>PHP</span><span>MySQL</span><span>Apache</span><span>JavaScript</span><span data-i18n="tag-websec">Seguridad Web</span>
+                    </div>
+                    <div class="project-footer">
+                        <span class="link-soon"><i class="fas fa-clock"></i> <span data-i18n="link-soon">Link próximamente</span></span>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="contact-title">Contacto</h2>
+            <div class="contact-card card">
+                <div class="contact-text">
+                    <h3 data-i18n="contact-subtitle">¡Hablemos y colaboremos!</h3>
+                    <p data-i18n="contact-desc">¿Tienes alguna propuesta, proyecto o consulta? Escríbeme y con gusto te responderé lo antes posible.</p>
+                </div>
+                <div class="contact-links">
+                    <a href="mailto:mmunozcyber@gmail.com" class="contact-btn">
+                        <i class="fas fa-envelope"></i> mmunozcyber@gmail.com
+                    </a>
+                    <a href="https://linkedin.com/in/milagros-muñoz2310" target="_blank" rel="noopener noreferrer" class="contact-btn">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="contact-btn">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Milagros Muñoz. <span data-i18n="footer-rights">Todos los derechos reservados.</span> ✨</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
